@@ -7,7 +7,9 @@
     <title>Accessible Blog Layout - Day 06</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,10 +18,7 @@
         <h1>CS Student Tech Blog</h1>
         <p>Documenting my journey through computer science.</p>
     </header>
-    
     <hr class="semantic-separator">
-
-    <!-- MAIN NAVIGATION -->
     <nav role="navigation" aria-label="Main Site Navigation" class="site-nav">
         <ul>
             <li><a href="#home">Home</a></li>
@@ -28,12 +27,8 @@
             <li><a href="#about">About</a></li>
         </ul>
     </nav>
-    
     <hr class="semantic-separator">
-
-    <!-- WRAPPER FOR RESPONSIVE LAYOUT -->
     <div class="layout-grid">
-        <!-- MAIN CONTENT -->
         <main role="main" id="main-content">
             <article class="card">
                 <header>
@@ -43,29 +38,28 @@
                         by <a href="#author" aria-label="Read more about the author">Senior Dev Mentor</a>
                     </p>
                 </header>
-
                 <section aria-labelledby="post-content">
                     <h3 id="post-content">The Power of Built-in Roles</h3>
-                    <p>When you use tags like <code>&lt;nav&gt;</code> and <code>&lt;main&gt;</code>, you are providing implicit ARIA roles to the browser. However, adding explicit ARIA attributes ensures compatibility with legacy assistive technologies.</p>
+                    <p>When you use tags like <code>&lt;nav&gt;</code> and <code>&lt;main&gt;</code>, you are providing
+                        implicit ARIA roles to the browser. However, adding explicit ARIA attributes ensures
+                        compatibility with legacy assistive technologies.</p>
                     <p>Here are the core tags we are focusing on today:</p>
                     <ul>
                         <li><strong>Main:</strong> The dominant content of the document.</li>
                         <li><strong>Article:</strong> Content that makes sense on its own.</li>
                         <li><strong>Aside:</strong> Content tangentially related to the main content.</li>
                     </ul>
-
                     <figure>
                         <!-- Ensured responsive image styling in CSS rather than hardcoded height -->
                         <img src="image.jpg" alt="html5 diagram">
                         <figcaption>Figure 1: The standard HTML5 document outline.</figcaption>
                     </figure>
                 </section>
-
                 <footer>
-                    <p class="tags">Categories: <a href="#category-html">HTML</a>, <a href="#category-a11y">Accessibility</a></p>
+                    <p class="tags">Categories: <a href="#category-html">HTML</a>, <a
+                            href="#category-a11y">Accessibility</a></p>
                 </footer>
             </article>
-
             <section aria-labelledby="comments-heading" class="card">
                 <h3 id="comments-heading">Comments</h3>
                 <article aria-label="Comment by fellow student" class="comment">
@@ -74,8 +68,6 @@
                 </article>
             </section>
         </main>
-
-        <!-- ASIDE / SIDEBAR -->
         <aside role="complementary" aria-label="Sidebar with related links" class="sidebar">
             <div class="widget card">
                 <h3>Related Posts</h3>
@@ -87,21 +79,19 @@
                     </ul>
                 </nav>
             </div>
-
             <div class="widget card">
                 <h3>Newsletter</h3>
-                <form action="#subscribe" method="POST" aria-label="Newsletter Subscription Form" class="newsletter-form">
+                <form action="#subscribe" method="POST" aria-label="Newsletter Subscription Form"
+                    class="newsletter-form">
                     <label for="email-input">Subscribe for updates:</label>
-                    <input type="email" id="email-input" name="email" required aria-required="true" placeholder="student@university.edu">
+                    <input type="email" id="email-input" name="email" required aria-required="true"
+                        placeholder="student@university.edu">
                     <button type="submit">Subscribe</button>
                 </form>
             </div>
         </aside>
     </div>
-
     <hr class="semantic-separator">
-
-    <!-- SITE FOOTER -->
     <footer role="contentinfo" class="site-footer">
         <p>&copy; 2026 CS Student Developer. All rights reserved.</p>
         <nav aria-label="Footer Navigation">
@@ -112,4 +102,5 @@
         </nav>
     </footer>
 </body>
+
 </html>
