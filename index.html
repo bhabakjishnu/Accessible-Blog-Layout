@@ -8,28 +8,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300;400;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header role="banner" class="site-header">
-        <h1>CS Student Tech Blog</h1>
-        <p>Documenting my journey through computer science.</p>
+        <h1>Tech Blog</h1>
+        <nav role="navigation" aria-label="Main Site Navigation" class="site-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+        <button class="nav-btn">Sign in</button>
     </header>
-    <hr class="semantic-separator">
-    <nav role="navigation" aria-label="Main Site Navigation" class="site-nav">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#about">About</a></li>
-        </ul>
-    </nav>
-    <hr class="semantic-separator">
-    <div class="layout-grid">
-        <main role="main" id="main-content">
+    <main role="main" id="main-content">
+        <div class="layout-grid">
             <article class="card">
                 <header>
                     <h2>Why Semantic HTML Matters for Accessibility</h2>
@@ -67,36 +65,36 @@
                     <p>This is a great breakdown! Removing CSS really forces you to look at the document structure.</p>
                 </article>
             </section>
-        </main>
-        <aside role="complementary" aria-label="Sidebar with related links" class="sidebar">
-            <div class="widget card">
-                <h3>Related Posts</h3>
-                <nav aria-label="Sidebar Navigation">
-                    <ul class="clean-list">
-                        <li><a href="#post1">Day 05: Forms & Inputs</a></li>
-                        <li><a href="#post2">Day 04: HTML Tables</a></li>
-                        <li><a href="#post3">Day 03: Lists and Links</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="widget card">
-                <h3>Newsletter</h3>
-                <form action="#subscribe" method="POST" aria-label="Newsletter Subscription Form"
-                    class="newsletter-form">
-                    <label for="email-input">Subscribe for updates:</label>
-                    <input type="email" id="email-input" name="email" required aria-required="true"
-                        placeholder="student@university.edu">
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
-        </aside>
-    </div>
+            <aside role="complementary" aria-label="Sidebar with related links" class="sidebar">
+                <div class="widget card">
+                    <h3>Related Posts</h3>
+                    <nav aria-label="Sidebar Navigation">
+                        <ul class="clean-list">
+                            <li><a href="#post1">Day 05: Forms & Inputs</a></li>
+                            <li><a href="#post2">Day 04: HTML Tables</a></li>
+                            <li><a href="#post3">Day 03: Lists and Links</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="widget card">
+                    <h3>Newsletter</h3>
+                    <form action="#subscribe" method="POST" aria-label="Newsletter Subscription Form"
+                        class="newsletter-form">
+                        <label for="email-input">Subscribe for updates:</label>
+                        <input type="email" id="email-input" name="email" required aria-required="true"
+                            placeholder="student@university.edu">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </aside>
+        </div>
+    </main>
     <hr class="semantic-separator">
     <footer role="contentinfo" class="site-footer">
         <p>&copy; 2026 CS Student Developer. All rights reserved.</p>
         <nav aria-label="Footer Navigation">
             <ul class="clean-list flex-center">
-                <li><a href="#privacy">Privacy Policy</a></li>
+                <li><a href="Tech_Blog_App_Privacy_Policy.txt">Privacy Policy</a></li>
                 <li><a href="#accessibility">Accessibility Statement</a></li>
             </ul>
         </nav>

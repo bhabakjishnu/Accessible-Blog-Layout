@@ -1,34 +1,87 @@
-/* ==========================================
-   1. CSS Reset & Custom Properties (Variables)
-   ========================================== */
-   *,
-   *::before,
-   *::after {
-       box-sizing: border-box;
-       margin: 0;
-       padding: 0;
-   }
-   
-   :root {
-       --primary-color: #2563eb;
-       --primary-dark: #1d4ed8;
-       --text-color: #1f2937;
-       --bg-color: #f3f4f6;
-       --card-bg: #ffffff;
-       --border-color: #e5e7eb;
-       --font-main: 'Poppins', sans-serif;
-       --font-accent: 'Kaushan Script', cursive;
-   }
-   
-   body {
-       font-family: var(--font-main);
-       color: var(--text-color);
-       background-color: var(--bg-color);
-       line-height: 1.6;
-       padding: 2rem 1rem;
-   }
-   
-   /* Hide semantic separators if we use CSS borders instead */
-   .semantic-separator {
-       display: none;
-   }
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #2563eb;
+    --primary-dark: #1d4ed8;
+    --text-color: #1f2937;
+    --bg-color: #92eeff;
+    --card-bg: #d8ffc5;
+    --border-color: #e5e7eb;
+    --font-main: 'Poppins', sans-serif;
+    --font-accent: 'Kaushan Script', cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-main);
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+}
+
+.semantic-separator {
+    display: none;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--card-bg);
+    padding: 20px 50px;
+    box-shadow: 0 10px 25px -5px rgba(26, 46, 17, 0.3),
+        0 8px 10px -6px rgba(26, 46, 17, 0.3);
+}
+
+.site-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.nav-btn {
+    display: inline-block;
+    background-color: var(--bg-color);
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: black;
+    font-weight: bold;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--card-bg);
+    padding: 30px 50px;
+    box-shadow: 0 10px 25px -5px rgba(26, 46, 17, 0.3),
+        0 8px 10px -6px rgba(26, 46, 17, 0.3);
+}
+.site-footer nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.site-footer nav a{
+    text-decoration: none;
+    color: var(--text-color);
+}
