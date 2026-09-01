@@ -1,0 +1,111 @@
+PRIVACY POLICY NOTICE
+Tech Blog App
+
+Last Updated: September 1, 2026
+
+This Privacy Policy explains how the Tech Blog App ("App", "we", "us", or "our") collects, uses, stores, and protects information when you use our application and related services.
+
+1. INFORMATION WE COLLECT
+
+We may collect the following information:
+
+• Account Information: Name, email address, username, profile information, and login details when you create an account.
+• Content You Provide: Comments, posts, bookmarks, likes, feedback, and other information you submit through the App.
+• Device Information: Device type, operating system, browser/app version, language, and general device identifiers.
+• Usage Information: Pages or articles viewed, searches, interactions, session information, and approximate usage activity.
+• Technical Information: IP address, crash reports, diagnostic information, and basic security logs.
+• Cookies and Similar Technologies: We may use cookies or similar technologies to remember preferences, improve performance, and understand usage.
+
+2. HOW WE USE YOUR INFORMATION
+
+We may use collected information to:
+
+• Provide, operate, and maintain the Tech Blog App.
+• Create and manage user accounts.
+• Display and personalize blog content and recommendations.
+• Allow users to comment, like, bookmark, or otherwise interact with content.
+• Respond to questions, requests, and support inquiries.
+• Send important service notifications and, where permitted, promotional communications.
+• Improve the App, content, features, security, and user experience.
+• Detect, prevent, and investigate fraud, abuse, unauthorized access, and other security issues.
+• Comply with applicable laws and legal obligations.
+
+3. COMMENTS AND PUBLIC CONTENT
+
+If you post comments, reviews, profile information, or other content that is intended to be public, that information may be visible to other users. Do not publish sensitive personal information in public areas of the App.
+
+4. INFORMATION SHARING
+
+We do not sell your personal information.
+
+We may share information only when reasonably necessary, including:
+
+• With service providers that help us operate hosting, analytics, authentication, email, security, or other App services.
+• When required by law, legal process, or a valid government request.
+• To protect the rights, safety, security, and property of our users, our organization, or others.
+• In connection with a merger, acquisition, restructuring, or sale of business assets, subject to applicable law.
+
+Service providers are expected to handle information according to applicable privacy and security requirements.
+
+5. THIRD-PARTY SERVICES
+
+The App may contain links to third-party websites, services, advertisements, or tools. Third parties may have their own privacy policies and terms. We are not responsible for the privacy practices of third-party services that we do not control.
+
+6. COOKIES AND ANALYTICS
+
+We may use cookies, local storage, analytics tools, and similar technologies to keep the App functioning, remember preferences, understand traffic, measure performance, and improve our services. Where required by law, we will request appropriate consent.
+
+7. DATA SECURITY
+
+We use reasonable technical and organizational safeguards designed to protect personal information against unauthorized access, loss, misuse, alteration, or disclosure. However, no online service can guarantee absolute security.
+
+8. DATA RETENTION
+
+We retain personal information only for as long as reasonably necessary for the purposes described in this policy, including providing services, maintaining records, resolving disputes, enforcing agreements, and meeting legal obligations.
+
+9. YOUR PRIVACY RIGHTS
+
+Depending on your location and applicable law, you may have rights to:
+
+• Access the personal information we hold about you.
+• Request correction of inaccurate information.
+• Request deletion of certain personal information.
+• Request restriction of or object to certain processing.
+• Withdraw consent where processing is based on consent.
+• Request a copy of certain information in a portable format.
+• Opt out of certain marketing communications.
+
+To exercise applicable rights, contact us using the details below. We may need to verify your identity before completing a request.
+
+10. CHILDREN'S PRIVACY
+
+The App is not intended to knowingly collect personal information from children in violation of applicable law. If you believe a child has provided personal information without appropriate permission, please contact us so that we can review and take appropriate action.
+
+11. ACCOUNT DELETION
+
+If the App provides account registration, you may request deletion of your account and associated personal information, subject to information that we are legally required or otherwise permitted to retain.
+
+12. INTERNATIONAL DATA TRANSFERS
+
+Your information may be processed or stored in countries other than the country where you live. Where required, we will use appropriate safeguards for international transfers.
+
+13. CHANGES TO THIS PRIVACY POLICY
+
+We may update this Privacy Policy from time to time. When we make material changes, we may provide notice through the App or other appropriate means. The "Last Updated" date at the top indicates when this policy was most recently revised.
+
+14. CONTACT US
+
+If you have questions, concerns, or privacy requests, please contact:
+
+App Name: Tech Blog App
+Company/Developer: [Your Company or Developer Name]
+Email: [Your Privacy/Support Email]
+Website: [Your Website URL]
+Address: [Your Business Address]
+
+15. USER ACKNOWLEDGMENT
+
+By using the Tech Blog App, you acknowledge that you have read and understood this Privacy Policy. Where applicable law requires consent, we will obtain the necessary consent before processing information that requires it.
+
+IMPORTANT NOTICE:
+This is a general privacy-policy template for a Tech Blog App and should be customized to match the App's actual data collection, third-party services, advertising, analytics, authentication, and legal requirements. Consider having the final policy reviewed by a qualified legal professional before publishing it.
