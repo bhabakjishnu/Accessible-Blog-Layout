@@ -1,104 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accessible Blog Layout - Day 06</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header role="banner" class="site-header">
-        <h1>Tech Blog</h1>
-        <nav role="navigation" aria-label="Main Site Navigation" class="site-nav">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </nav>
-        <button class="nav-btn">Sign in</button>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container header-container">
+            <h1>Tech Blog</h1>
+            <nav aria-label="Main Site Navigation" class="site-nav">
+                <ul class="clean-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#blog" aria-current="page">Blog</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+            <button class="btn btn-primary">Sign in</button>
+        </div>
     </header>
-    <main role="main" id="main-content">
+
+    <main id="main-content" class="container">
         <div class="layout-grid">
-            <article class="card">
-                <header>
-                    <h2>Why Semantic HTML Matters for Accessibility</h2>
-                    <p class="meta">
-                        Published on <time datetime="2026-08-20">August 20, 2026</time>
-                        by <a href="#author" aria-label="Read more about the author">Senior Dev Mentor</a>
-                    </p>
-                </header>
-                <section aria-labelledby="post-content">
-                    <h3 id="post-content">The Power of Built-in Roles</h3>
-                    <p>When you use tags like <code>&lt;nav&gt;</code> and <code>&lt;main&gt;</code>, you are providing
-                        implicit ARIA roles to the browser. However, adding explicit ARIA attributes ensures
-                        compatibility with legacy assistive technologies.</p>
-                    <p>Here are the core tags we are focusing on today:</p>
-                    <ul>
-                        <li><strong>Main:</strong> The dominant content of the document.</li>
-                        <li><strong>Article:</strong> Content that makes sense on its own.</li>
-                        <li><strong>Aside:</strong> Content tangentially related to the main content.</li>
-                    </ul>
-                    <figure>
-                        <!-- Ensured responsive image styling in CSS rather than hardcoded height -->
-                        <img src="image.jpg" alt="html5 diagram">
-                        <figcaption>Figure 1: The standard HTML5 document outline.</figcaption>
-                    </figure>
-                </section>
-                <footer>
-                    <p class="tags">Categories: <a href="#category-html">HTML</a>, <a
-                            href="#category-a11y">Accessibility</a></p>
-                </footer>
-            </article>
-            <section aria-labelledby="comments-heading" class="card">
-                <h3 id="comments-heading">Comments</h3>
-                <article aria-label="Comment by fellow student" class="comment">
-                    <h4>Fellow CS Student</h4>
-                    <p>This is a great breakdown! Removing CSS really forces you to look at the document structure.</p>
+            <div class="primary-content">
+                <article class="card">
+                    <header class="article-header">
+                        <h2>Why Semantic HTML Matters for Accessibility</h2>
+                        <p class="meta">
+                            Published on <time datetime="2026-08-20">August 20, 2026</time>
+                            by <a href="#author" aria-label="Read more about the author, Senior Dev Mentor">Senior Dev Mentor</a>
+                        </p>
+                    </header>
+
+                    <section aria-labelledby="post-content">
+                        <h3 id="post-content">The Power of Built-in Roles</h3>
+                        <p>When you use tags like <code>&lt;nav&gt;</code> and <code>&lt;main&gt;</code>, you are providing implicit ARIA roles to the browser. Trusting these native elements ensures a clean, accessible document outline.</p>
+                        <p>Here are the core tags we are focusing on today:</p>
+                        <ul>
+                            <li><strong>Main:</strong> The dominant content of the document.</li>
+                            <li><strong>Article:</strong> Content that makes sense on its own.</li>
+                            <li><strong>Aside:</strong> Content tangentially related to the main content.</li>
+                        </ul>
+                        <figure>
+                            <img src="image.jpg" alt="Diagram showing header, main, aside, and footer structural relationships">
+                            <figcaption>Figure 1: The standard HTML5 document outline.</figcaption>
+                        </figure>
+                    </section>
+
+                    <footer class="article-footer">
+                        <p class="tags">Categories: <a href="#category-html">HTML</a>, <a href="#category-a11y">Accessibility</a></p>
+                    </footer>
                 </article>
-            </section>
-            <aside role="complementary" aria-label="Sidebar with related links" class="sidebar">
+
+                <section aria-labelledby="comments-heading" class="card comments-section">
+                    <h3 id="comments-heading">Comments</h3>
+                    <article aria-label="Comment by fellow student" class="comment">
+                        <h4>Fellow CS Student</h4>
+                        <p>This is a great breakdown! Removing CSS really forces you to look at the document structure.</p>
+                    </article>
+                </section>
+            </div>
+
+            <aside aria-label="Sidebar with related content" class="sidebar">
                 <div class="widget card">
                     <h3>Related Posts</h3>
                     <nav aria-label="Sidebar Navigation">
-                        <ul class="clean-list">
+                        <ul class="clean-list related-links">
                             <li><a href="#post1">Day 05: Forms & Inputs</a></li>
                             <li><a href="#post2">Day 04: HTML Tables</a></li>
                             <li><a href="#post3">Day 03: Lists and Links</a></li>
                         </ul>
                     </nav>
                 </div>
+
                 <div class="widget card">
                     <h3>Newsletter</h3>
-                    <form action="#subscribe" method="POST" aria-label="Newsletter Subscription Form"
-                        class="newsletter-form">
-                        <label for="email-input">Subscribe for updates:</label>
-                        <input type="email" id="email-input" name="email" required aria-required="true"
-                            placeholder="student@university.edu">
-                        <button type="submit">Subscribe</button>
+                    <form action="#subscribe" method="POST" aria-label="Newsletter Subscription Form" class="newsletter-form">
+                        <div class="form-group">
+                            <label for="email-input">Subscribe for updates:</label>
+                            <input type="email" id="email-input" name="email" required placeholder="student@university.edu">
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Subscribe</button>
                     </form>
                 </div>
             </aside>
         </div>
     </main>
-    <hr class="semantic-separator">
-    <footer role="contentinfo" class="site-footer">
-        <p>&copy; 2026 CS Student Developer. All rights reserved.</p>
-        <nav aria-label="Footer Navigation">
-            <ul class="clean-list flex-center">
-                <li><a href="Tech_Blog_App_Privacy_Policy.txt">Privacy Policy</a></li>
-                <li><a href="#accessibility">Accessibility Statement</a></li>
-            </ul>
-        </nav>
+
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 CS Student Developer. All rights reserved.</p>
+            <nav aria-label="Footer Navigation">
+                <ul class="clean-list footer-links">
+                    <li><a href="Tech_Blog_App_Privacy_Policy.txt">Privacy Policy</a></li>
+                    <li><a href="#accessibility">Accessibility Statement</a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
 </body>
-
 </html>
